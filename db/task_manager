@@ -9,4 +9,10 @@ tasks:
 - id: 3
   title: Spaghetti
   description: Buy noodles
-total: 3
+- id: 4
+  title: Spaghetti
+  description: Buy noodles
+- id: 5
+  title: Burritos
+  description: Buy tortillas
+total: 5
