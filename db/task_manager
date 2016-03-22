@@ -15,4 +15,7 @@ tasks:
 - id: 5
   title: Burritos
   description: Buy tortillas
-total: 5
+- id: 6
+  title: Eggs
+  description: "Eggs\r\nGhee"
+total: 6

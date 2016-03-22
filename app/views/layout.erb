@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href='<%= url('/css/bootstrap.css') %>' rel='stylesheet'>
+    <title>Task Manager</title>
+  </head>
+  <body>
+    <div class='col-md-12 navbar navbar-default navbar-static-top'>
+      <a href='/' class='navbar-brand'>Task Manager</a>
+    </div>
+    <div class="container">
+      <%= yield %>
+    </div>
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src='<%= url('js/bootstrap.js') %>'></script>
+  </body>
+</html>
