@@ -1,7 +1,7 @@
 ---
 tasks:
 - id: 1
-  title: Make Cookies
+  title: Make More Cookies
   description: Chocolate chip cookies are so delicious. I am hungry.
 - id: 2
   title: Go shopping
@@ -10,11 +10,8 @@ tasks:
   title: Spaghetti
   description: Buy noodles
 - id: 4
-  title: Spaghetti
-  description: Buy noodles
-- id: 5
-  title: Burritos
-  description: Buy tortillas
+  title: Sauce
+  description: Buy tomatoes
 - id: 6
   title: Eggs
   description: "Eggs\r\nGhee"

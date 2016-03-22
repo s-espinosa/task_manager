@@ -1,6 +1,12 @@
     <h1>All Tasks</h1>
     <div class="list-group">
       <% @tasks.each do |task| %>
-        <p class="list-group-item"><%= task.id %>: <a href="/tasks/<%= task.id %>"><%= task.title %></a></p>
+        <p class="list-group-item">
+          <%= task.id %>: <a href="/tasks/<%= task.id %>"><%= task.title %></a> <a href="/tasks/<%= task.id %>/edit">Edit</a>
+        </p>
+        <form action="/tasks/<%= task.id %>" method="post">
+          <input type="hidden" name="_method" value="delete">
+          <input type="submit" value="delete">
+        </form>
       <% end %>
     </div>
