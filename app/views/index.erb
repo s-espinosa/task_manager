@@ -1,8 +1,8 @@
     <h1>All Tasks</h1>
     <div class="list-group">
-      <% @tasks.each do |task| %>
+      <% @tasks.each_with_index do |task, index| %>
         <p class="list-group-item">
-          <%= task.id %>: <a href="/tasks/<%= task.id %>"><%= task.title %></a> <a href="/tasks/<%= task.id %>/edit">Edit</a>
+          <%= index + 1 %>: <a href="/tasks/<%= task.id %>"><%= task.title %></a> <a href="/tasks/<%= task.id %>/edit">Edit</a>
         </p>
         <form action="/tasks/<%= task.id %>" method="post">
           <input type="hidden" name="_method" value="delete">
