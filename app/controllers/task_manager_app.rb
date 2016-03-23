@@ -1,9 +1,4 @@
-require 'models/task_manager'
-
 class TaskManagerApp < Sinatra::Base
-  set :root, File.expand_path("..", __dir__)
-  set :method_override, true
-
   attr_reader :task_manager
 
   get '/' do
@@ -40,7 +35,7 @@ class TaskManagerApp < Sinatra::Base
   end
 
   delete '/tasks/:id' do |id|
-    task_manager.delete(id.to_i)
+    task_manager.destroy(id.to_i)
     redirect "/tasks"
   end
 

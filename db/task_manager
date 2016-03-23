@@ -9,10 +9,7 @@ tasks:
 - id: 3
   title: Spaghetti
   description: Buy noodles
-- id: 4
-  title: Sauce
-  description: Buy tomatoes
-- id: 6
+- id: 7
   title: Eggs
-  description: "Eggs\r\nGhee"
-total: 6
+  description: Buy some eggs.
+total: 7
