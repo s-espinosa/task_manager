@@ -3,6 +3,10 @@ ENV['RACK_ENV'] ||= "test"
 require File.expand_path("../../config/environment", __FILE__)
 require 'minitest/autorun'
 require 'minitest/pride'
+require 'capybara/dsl'
+require 'tilt/erb'
+
+Capybara.app = TaskManagerApp
 
 module TestHelpers
   def teardown
@@ -20,7 +24,7 @@ module TestHelpers
       task_manager.create({
         :title => "Task #{current_num + 1}",
         :description => "Description #{current_num + 1}"
-        })
+      })
     end
   end
 
@@ -28,5 +32,4 @@ module TestHelpers
     {:title       => "New Task",
      :description => "New Task Description"}
   end
-
 end
